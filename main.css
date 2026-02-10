@@ -1,0 +1,581 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Momo Signature", cursive;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration-line: none;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-block: 0;
+}
+
+.container {
+    width: 1440px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.site-header {
+    display: flex;
+    padding-block: 13px;
+}
+
+.my-name {
+    padding-block: 13px;
+    color:gold;
+    font-size: 33px;
+}
+
+.header-wrappar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    column-gap: 34.5px;
+    background-color:deepskyblue;
+    padding: 25px 19.67px;
+    border-radius: 13px;
+}
+
+.navbar-item {
+background-color:#E6F6FF;
+color: #0F172A;
+padding: 10px;
+border-radius: 15px;
+}
+
+.navbar-link {
+    color:darkgoldenrod;
+}
+
+.navbar-family {
+color: aliceblue;
+}
+
+.navbar-link-beck {
+color: aliceblue;
+}
+
+.navbar-item-zbeck {
+    background-color: royalblue;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.navbar-ithem {
+    background-color: royalblue;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.navbar-frends {
+    background-color: royalblue;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.navbar-menu {
+    color:darkgoldenrod;
+}
+
+.navbar-end {
+    color: aliceblue;
+}
+
+.navbar-projekt {
+    background-color: royalblue;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.navbar-pro {
+    color: aliceblue;  
+}
+
+.mods {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+}
+
+
+
+#modal-toggle {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+}
+
+#modal-toggle:checked + .modal {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    background: #111827;
+    padding: 32px 28px;
+    border-radius: 24px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.7);
+    transform: scale(0.7);
+    transition: transform 0.3s ease;
+}
+
+#modal-toggle:checked + .modal .modal-content {
+    transform: scale(1);
+}
+
+.close-btn {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #f87171;
+}
+
+.modal-content h2 {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 26px;
+    color: #e5e7eb;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+input {
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: #1f2937;
+    color: #e5e7eb;
+    transition: background 0.3s;
+}
+
+input:focus {
+    background: #374151;
+}
+
+form button {
+    padding: 12px 16px;
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    border: none;
+    border-radius: 12px;
+    color: #020617;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #0ea5e9, #4f46e5);
+}
+
+
+
+/* header tugadi */
+
+
+
+
+/* main */
+
+
+/* 1 section */
+
+.site-main {
+    background: linear-gradient(67deg navy turquoise darkslategrey  rgb(15, 15, 97));
+}
+
+.one-section-wrappar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.men {
+    
+    margin-top: 130px;
+    
+    border: 1px solid gold;
+    
+    width: max-content;
+}
+
+.hero {
+    
+    width: max-content;
+    
+    margin-top: 130px;
+    
+    margin-left: 150px;
+    
+    border: 1px solid skyblue;
+    
+    box-shadow: 14px 14px 14px skyblue;
+    
+    border-radius: 23px;
+    
+    padding:16.67px 16.67px 16.67px 16.67px; 
+}
+
+.hero:active {
+    
+    width: max-content;
+    
+    margin-top: 130px;
+    
+    margin-left: 150px;
+    
+    border: 1px solid steelblue;
+    
+    box-shadow: 14px 14px 14px steelblue;
+    
+    border-radius: 23px;
+    
+    padding:16.67px 16.67px 16.67px 16.67px;  
+    
+    
+    transition: 50s;
+}
+
+.hero-title {
+
+    color: sandybrown;
+
+    margin-top: 0;
+}
+
+.hero-desc {
+    
+    color:sandybrown;
+    
+    font-size:23.67px;
+}
+
+
+.hero-span {
+    background-color:turquoise;
+    
+    color: dimgrey;
+    
+    border: 1.2px ridge grey;
+    
+    box-shadow: 3.67px 3.67px 3.67px cadetblue;
+    
+    border-radius: 3.67px; 
+    
+    padding: 4.13px;
+}
+
+
+.hero-link {
+    
+    display: flex;
+    
+    align-items: center;
+    
+    gap: 13px;
+    
+    color: sandybrown;
+    
+    border: 0.0001 hidden saddlebrown;
+    
+    padding: 6.67px;
+    
+    border-radius: 13px;
+    
+    background-color: turquoise;
+    
+    width: max-content;
+}
+
+
+
+
+
+
+/* 1 section end */
+
+
+
+/* 
+family
+*/
+
+.family-section {
+list-style: u;
+}
+
+/* main */
+.site-main {
+animation-timing-function: calc();
+}
+/* ul */
+
+.flexx {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.family-wrappar {
+    display: flex;
+    padding-block: 150px;
+    gap: 67px;
+}
+
+.family-desc {
+    font-size: 29px;
+    color: #676767;
+
+}
+
+.family-texts-wrappar {
+align-items: center;
+}
+
+.family-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    justify-content: space-between;
+
+    margin-inline: auto;
+
+    width: max-content;
+
+    row-gap: 67px;
+
+    column-gap: 67px;
+
+
+}
+
+.googgl {
+    margin-inline: auto;
+}
+
+/* li */
+
+.family-list-item {
+    background:linear-gradient( 67deg, blue, skyblue, cadetblue ) ;
+
+    width: 587px;
+
+    border-radius: 23px;
+
+    height: 400px;
+
+    border: 1px solid gold;
+}
+/* name */
+.family-title {
+
+    font-size: 33px;
+
+    color: rgb(67,67,67);
+
+    padding: 0px 0px 5px 7px;
+}
+.site-header {
+    background: linear-gradient(183deg, #374151, #0ea5e9, #1f2937);
+}
+
+/* information */
+
+.family-list-item-info {
+
+    padding: 0px 0px 8px 7px;
+
+    font-size: 33px;
+
+    color: rgb(168, 255, 62);
+
+}
+
+
+
+
+/* 
+
+family
+
+*/
+
+
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #f6f6f6;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 25%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+
+
+
+
+
+
+
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 167px;
+    row-gap: 67px;
+}
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 167px;
+    border: 3px dotted #1f2937;
+    border-radius: 13px;
+    background: linear-gradient(32deg,turquoise,darkblue,#38bdf8);
+}
+
+.text-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-title {
+    width: max-content;
+    align-items: center;
+    margin-left: 19px;
+}
+
+.site-link {
+    width: max-content;
+    margin-left: 119px;
+    border: 1px thick #38bdf8;
+    background-color: cornflowerblue;
+    color: #e5e7eb;
+
+    padding: 22px;
+    border-radius: 22px;
+    margin-right: 21px;
+
+}
+
+
+/* friend */
+.friend-section {
+background: linear-gradient(23deg, #4f46e5 #38bdf8 #1f2937 );
+} 
+
+.friend-top-wrappar {
+text-align: center;
+
+}
+
+.friends-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+justify-content: space-between;
+background: linear-gradient(45deg #0ea5e9 #0F172A #4f46e5);
+}
+
+.friens-item {
+width: max-content;
+display: flex;
+}
+
+.friends-information {
+width: 500px;
+justify-content: center;
+}
+.friend-name {
+text-align: center;
+color: #38bdf8;
+}
+
+.friend-info {
+color: #111827;
+}
+
+.friend-img {
+width: 300px;
+}
+
+/* main end */
