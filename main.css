@@ -5,6 +5,8 @@
 body {
     margin: 0;
     font-family: "Momo Signature", cursive;
+    background:linear-gradient( 113deg, blue, skyblue, cadetblue ) ;
+
 }
 
 img {
@@ -37,6 +39,9 @@ ul {
     padding-block: 13px;
     color:gold;
     font-size: 33px;
+    animation-name: anim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 .header-wrappar {
@@ -56,7 +61,16 @@ ul {
     align-items: center;
     column-gap: 34.5px;
     background-color:deepskyblue;
-    padding: 25px 19.67px;
+    padding: 25px 19px;
+    border-radius: 13px;
+}
+
+.fff-list {
+    display: flex;
+    align-items: center;
+    column-gap: 34.5px;
+    background-color:deepskyblue;
+    padding:35px;
     border-radius: 13px;
 }
 
@@ -72,11 +86,11 @@ border-radius: 15px;
 }
 
 .navbar-family {
-color: aliceblue;
+    color: aliceblue;
 }
 
 .navbar-link-beck {
-color: aliceblue;
+    color: aliceblue;
 }
 
 .navbar-item-zbeck {
@@ -230,9 +244,9 @@ form button:hover {
 
 /* 1 section */
 
-.site-main {
-    background: linear-gradient(67deg navy turquoise darkslategrey  rgb(15, 15, 97));
-}
+/* .site-main {
+
+} */
 
 .one-section-wrappar {
     display: flex;
@@ -240,14 +254,7 @@ form button:hover {
     justify-content: space-between;
 }
 
-.men {
-    
-    margin-top: 130px;
-    
-    border: 1px solid gold;
-    
-    width: max-content;
-}
+.men {margin-top: 130px;}
 
 .hero {
     
@@ -410,6 +417,10 @@ align-items: center;
 
 /* li */
 
+.one-section {
+    background:linear-gradient( 113deg, blue, skyblue, cadetblue ) ;
+}
+
 .family-list-item {
     background:linear-gradient( 67deg, blue, skyblue, cadetblue ) ;
 
@@ -430,9 +441,7 @@ align-items: center;
 
     padding: 0px 0px 5px 7px;
 }
-.site-header {
-    background: linear-gradient(183deg, #374151, #0ea5e9, #1f2937);
-}
+
 
 /* information */
 
@@ -454,46 +463,6 @@ align-items: center;
 family
 
 */
-
-
-html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    body {
-      background: #f6f6f6;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper {
-      width: 25%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 300px;
-      height: 300px;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-    }
-
-
-
-
-
-
 
 
 .project-list {
@@ -578,4 +547,146 @@ color: #111827;
 width: 300px;
 }
 
+/* .i-am {
+
+}
+
+.i-am-hero {
+
+} */
+
+.i-am-wrappar { 
+    display: flex;
+    align-items: center;
+    gap: 67px;
+}
+
+.img-iam {
+    border-radius: 67%;
+}
+
+.i-am-hero-title {
+    color:darkcyan;
+    font-size: 33px;
+}
+
+.i-am-hero-desc {
+    color: darkblue;
+    font-size: 27px;
+}
+
 /* main end */
+
+
+
+
+/* нога*/
+
+.footer-wrappar {
+    width: max-content;
+    margin-inline: auto;
+    padding-block: 67px 38px;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    column-gap: 34.5px;
+    background-color:deepskyblue;
+    border-radius: 13px;
+    padding: 25px;
+    width: max-content;
+}
+
+.footer-item {
+    background-color:#E6F6FF;
+    color: #0F172A;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.footer-link {
+    color:darkgoldenrod;
+}
+
+
+.navbar-link {
+}
+
+.navbar-family {
+    color: aliceblue;
+}
+
+.footer-link-bg {
+    color: aliceblue;
+}
+
+.footer-beckground {
+    background-color: royalblue;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.navbar-ithem {
+    background-color: royalblue;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.navbar-frends {
+    background-color: royalblue;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+
+
+
+/* нога */
+
+@keyframes anim {
+    
+    0% {
+        transform:scale(44%);
+    }
+
+    10% {
+        transform:scale(55%);
+    }
+
+    20% {
+        transform:scale(67%);
+    }
+
+    30% {
+        transform:scale(77%);
+    }
+
+    40% {
+        transform:scale(88%);
+    }
+
+    50% {
+        transform:scale(123%);
+    }
+
+    60% {
+        transform:scale(123%);
+    }
+
+    70% {
+        transform:scale(88%);
+    }
+
+    80% {
+        transform:scale(77%);
+    }
+
+    90% {
+        transform:scale(67%);
+    }
+
+    100% {
+        transform:scale(44%);
+    }
+}
